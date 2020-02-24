@@ -11,10 +11,10 @@ var parolaPalindroma = palindroma(parolaInserita);
 console.log(parolaPalindroma);
 
 //3 creo un if con il log. palidnroma o no
-if (parolaInserita == parolaPanlidroma) {
-    console.log('La parola è palidroma');
+if (parolaInserita == parolaPalindroma) {
+    console.log('La parola è palindroma');
     } else {
-        console.log('La parola non è palidroma');
+        console.log('La parola non è palindroma');
     }
 
 //4 creo la funzione per capire se e palidroma ?? cercare sul web
