@@ -42,11 +42,11 @@ Sommiamo i due numeri e dichiariamo chi ha vinto.
 //1 creo un prompt per scegliere pari o dispari
 var pariODispari = prompt('Scegli pari o dispari');
 //2 creo un 'altro prompt e chiedo un numero
-var scegliNumero = prompt ('Scegli un numero');
+var scegliNumero = parseInt(prompt('Scegli un numero da 1 a 5'));
 //3 genero un numero ramdom creando una variabile  richimando poi la funzione
 var numero = generoRandomMinMax(1 , 5);
 //4 creo una variabile per poi richiamre la funzione somma
-var somma = sommaNumeri(scegliNumero , numeroRandom);
+var somma = sommaNumeri(10 , 5);
 
 
 
@@ -57,8 +57,10 @@ var somma = sommaNumeri(scegliNumero , numeroRandom);
 function generoRandomMinMax(min, max){
     var numeroRandom = Math.floor(Math.random() * (max - min + 1)) +min;
     return numeroRandom;
+    console.log(numeroRandom);
 }
 function sommaNumeri( num1 , num2 ){
     var risultato =  num1 + num2;
-    return risultato;
+    //return risultato;
+    console.log(risultato);
 }
