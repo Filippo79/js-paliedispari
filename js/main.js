@@ -5,7 +5,7 @@
 //4 creo la funzione per capire se e palidroma ?? cercare sul web
 
 // 1 creo un prompt per inserire la parola
-var parolaInserita = prompt('Inserisci un numero per stabilire se è palindroma');
+/*var parolaInserita = prompt('Inserisci un numero per stabilire se è palindroma');
 //2 creo variabile per la funzione
 var parolaPalindroma = palindroma(parolaInserita);
 console.log(parolaPalindroma);
@@ -24,4 +24,41 @@ function palindroma(parola) {
         parolaReverse += parola[i]
     }
     return parolaReverse ;
+}*/
+
+
+
+/*
+L’utente sceglie pari o dispari e un numero da 1 a 5.
+Generiamo un numero random (sempre da 1 a 5) per il computer.
+Sommiamo i due numeri e dichiariamo chi ha vinto.
+*/
+//1 creo un prompt per scegliere pari o dispari
+//2 creo un 'altro prompt e chiedo un numero
+//3 genero un numero ramdom creando una variabile  richimando poi la funzione
+//4 creo una variabile per poi richiamre la funzione somma
+//5 creo conson log per rispondere se ha vinto o // NOTE:
+
+//1 creo un prompt per scegliere pari o dispari
+var pariODispari = prompt('Scegli pari o dispari');
+//2 creo un 'altro prompt e chiedo un numero
+var scegliNumero = prompt ('Scegli un numero');
+//3 genero un numero ramdom creando una variabile  richimando poi la funzione
+var numero = generoRandomMinMax(1 , 5);
+//4 creo una variabile per poi richiamre la funzione somma
+var somma = sommaNumeri(scegliNumero , numeroRandom);
+
+
+
+
+
+
+
+function generoRandomMinMax(min, max){
+    var numeroRandom = Math.floor(Math.random() * (max - min + 1)) +min;
+    return numeroRandom;
+}
+function sommaNumeri( num1 , num2 ){
+    var risultato =  num1 + num2;
+    return risultato;
 }
